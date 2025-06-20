@@ -1,9 +1,6 @@
-// Models and API Service in one file
 
    import 'package:dio/dio.dart';
-   // Models and API Service in one file
 
-// Fertilizer Model
 class Fertilizer {
   final int id;
   final String name;
@@ -27,7 +24,6 @@ class Fertilizer {
   }
 }
 
-// Crop Model
 class Crop {
   final int id;
   final String name;

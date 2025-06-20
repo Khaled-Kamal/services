@@ -53,7 +53,7 @@ class AuthService {
       );
 
       if (response.statusCode == 200) {
-        final token = response.data['token']; // افتراض إن التوكين في response.data['token']
+        final token = response.data['token']; 
         return {"status": "success", "token": token};
       } else {
         return {"status": "failed", "message": "Login failed: ${response.statusCode}"};

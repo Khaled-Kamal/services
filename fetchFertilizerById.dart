@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:smart_land/services/fertliizerAPi.dart'; // افترض إن الـ Fertilizer Model موجود هنا
+import 'package:smart_land/services/fertliizerAPi.dart'; 
 
 Future<Fertilizer> fetchFertilizerById(int id) async {
   try {

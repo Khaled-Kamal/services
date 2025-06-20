@@ -1,7 +1,6 @@
 import 'package:dio/dio.dart';
 
-// نموذج البيانات للنباتات
-class Plant {
+]class Plant {
   final int id;
   final String name;
   final String scientificName;
@@ -45,7 +44,6 @@ class Plant {
   }
 }
 
-// دالة لجلب البيانات من الـ API
 Future<List<Plant>> fetchPlants() async {
   final Dio dio = Dio();
   try {

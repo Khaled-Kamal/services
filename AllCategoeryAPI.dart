@@ -79,7 +79,6 @@ class ApiService {
     }
   }
 
-  // دالة لجلب بيانات Crop
   Future<Map<String, dynamic>> fetchCropById(int id) async {
     try {
       final response = await _dio.get('Crops/$id');
@@ -93,7 +92,6 @@ class ApiService {
     }
   }
 
-  // دالة لجلب بيانات Fertilizer
   Future<Map<String, dynamic>> fetchFertilizerById(int id) async {
     try {
       final response = await _dio.get('Fertilizers/$id');
@@ -107,7 +105,6 @@ class ApiService {
     }
   }
 
-  // دالة لجلب بيانات Plant
   Future<Map<String, dynamic>> fetchPlantById(int id) async {
     try {
       final response = await _dio.get('Plants/$id');

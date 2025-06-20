@@ -5,10 +5,10 @@ class Crop {
   final String name;
   final String description;
   final String imageUrl;
-  final String? scientificName; // قابل ليكون null
-  final String? temperatureRange; // قابل ليكون null
-  final String? waterNeeds; // قابل ليكون null
-  final String? soilType; // قابل ليكون null
+  final String? scientificName; 
+  final String? temperatureRange; 
+  final String? waterNeeds; 
+  final String? soilType; 
 
   Crop({
     required this.id,
@@ -22,9 +22,8 @@ class Crop {
   });
 
   factory Crop.fromJson(Map<String, dynamic> json) {
-    const baseUrl = 'https://48pmt2mt-7016.uks1.devtunnels.ms'; // الـ base URL
+    const baseUrl = 'https://48pmt2mt-7016.uks1.devtunnels.ms'; 
     String imagePath = json['imageUrl'] ?? '';
-    // إضافة الـ base URL للرابط لو مش موجود
     String fullImageUrl = imagePath.startsWith('http') ? imagePath : '$baseUrl$imagePath';
 
     return Crop(
